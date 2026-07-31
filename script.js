@@ -298,14 +298,12 @@ const cards=document.querySelectorAll(".glass");
 
 cards.forEach((card,i)=>{
 
-const x=(e.clientX-window.innerWidth/2)/150*(i+1)/4;
-
-const y=(e.clientY-window.innerHeight/2)/150*(i+1)/4;
+const x=(e.clientX-window.innerWidth/2)/250*(i+1)/8;
+const y=(e.clientY-window.innerHeight/2)/250*(i+1)/8;
 
 card.style.transform=`translate(${x}px,${y}px)`;
 
 });
 
 });
-
 console.log("Premium Executive Leadership Website Loaded.");
