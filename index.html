@@ -1,217 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Overall Coordinators — E-Cell, Siddhartha University</title>
-<meta name="description" content="Meet the Overall Coordinators of the Entrepreneurship Cell, Siddhartha University." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Cell | Overall Coordinators</title>
 
-<!-- Favicon placeholder -->
-<link rel="icon" href="images/ecell-logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css">
 
-<!-- Google Fonts: Outfit (display) + Manrope (body) -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
+
 <body>
 
-  <!-- ============ GOLDEN CURSOR GLOW ============ -->
-  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div id="cursor"></div>
+<div id="spotlight"></div>
 
-  <!-- ============ BACKGROUND LAYER ============ -->
-  <div class="bg-layer" aria-hidden="true">
-    <div class="gradient-mesh"></div>
-    <div class="floating-circle circle-1"></div>
-    <div class="floating-circle circle-2"></div>
-    <div class="floating-circle circle-3"></div>
-    <canvas id="particleCanvas"></canvas>
-    <div class="watermark watermark-ecell">E-CELL</div>
-    <div class="watermark watermark-uni">SIDDHARTHA UNIVERSITY</div>
-  </div>
+<canvas id="particles"></canvas>
 
-  <!-- ============ HEADER / NAVIGATION ============ -->
-  <header class="site-header" id="siteHeader">
-    <nav class="nav-glass" aria-label="Primary navigation">
-      <div class="nav-brand">
-        <img src="images/sahe-logo.jpeg" alt="Siddhartha University Logo" class="nav-logo" />
-        <img src="images/ecell-logo.png" alt="E-Cell Logo" class="nav-logo nav-logo-ecell" />
-      </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#departments" class="nav-link">Departments</a></li>
-        <li><a href="#team" class="nav-link">Team</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- ================= NAVBAR ================= -->
 
-  <main>
-    <!-- ============ HERO SECTION ============ -->
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <p class="hero-eyebrow reveal">Entrepreneurship Cell &middot; Siddhartha University</p>
-        <h1 class="hero-title reveal">Meet Our Overall Coordinators</h1>
-        <p class="hero-subtitle reveal">
-          Two leaders.<br />
-          One vision.<br />
-          Driving innovation and entrepreneurship at Siddhartha University.
-        </p>
-        <a href="#team" class="scroll-cue reveal" aria-label="Scroll to team section">
-          <span class="scroll-cue-dot"></span>
-        </a>
-      </div>
-    </section>
+<nav>
 
-    <!-- ============ COORDINATOR / TEAM SECTION ============ -->
-    <section class="team-section" id="team">
-      <div class="team-grid">
+<div class="logo-area">
 
-        <!-- ===== CARD 1 — SYEDAVALI SHAIK ===== -->
-        <article class="coordinator-card reveal" data-href="https://syedavali-ecell-potfolio.vercel.app/" tabindex="0" role="link" aria-label="Open Syedavali Shaik's full portfolio in a new tab">
-          <div class="card-glass">
-            <div class="portrait-wrap">
-              <div class="portrait-glow"></div>
-              <div class="portrait-halo"></div>
-              <img src="images/syedavali.png" alt="Portrait of Syedavali Shaik" class="portrait-img" loading="lazy" />
-              <span class="portrait-watermark">EC</span>
-            </div>
+<img src="images/university-logo.png" class="logo">
 
-            <h3 class="coordinator-name">Syedavali Shaik</h3>
-            <p class="coordinator-role">Overall Coordinator</p>
-            <p class="coordinator-dept">ECE &bull; III B.Tech</p>
-            <p class="coordinator-org">Entrepreneurship Cell &mdash; Siddhartha University</p>
+<img src="images/ecell-logo.png" class="logo">
 
-            <span class="divider" aria-hidden="true"></span>
+</div>
 
-            <p class="coordinator-about">
-              I am Syedavali Shaik, currently serving as the Media Head of our college's Entrepreneurship Cell (E-Cell). I specialize in managing Instagram content, building digital engagement, and promoting events through creative visual storytelling. I enjoy combining creativity with strategy to strengthen online communities and create meaningful digital experiences.
-            </p>
+<ul>
 
-            <ul class="skill-chips" aria-label="Skills">
-              <li class="chip">Leadership</li>
-              <li class="chip">Communication</li>
-              <li class="chip">Branding</li>
-              <li class="chip">Content Creation</li>
-              <li class="chip">Team Collaboration</li>
-            </ul>
+<li><a href="#">Home</a></li>
 
-            <a href="https://syedavali-ecell-potfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="portfolio-btn card-link">
-              <span>View Full Portfolio</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-        </article>
+<li><a href="#departments">Departments</a></li>
 
-        <!-- ===== CONNECTOR ===== -->
-        <div class="connector" aria-hidden="true">
-          <div class="connector-line">
-            <span class="connector-particle p1"></span>
-            <span class="connector-particle p2"></span>
-            <span class="connector-particle p3"></span>
-          </div>
-          <div class="connector-badge">
-            <span class="connector-title">Working Together</span>
-            <span class="connector-subtitle">One Vision &bull; One Mission &bull; One Team</span>
-          </div>
-        </div>
+<li><a href="#team">Team</a></li>
 
-        <!-- ===== CARD 2 — NARENDER DAMMALAPATI ===== -->
-        <article class="coordinator-card reveal" data-href="https://narender-e-cell-portfolio.vercel.app/#contact" tabindex="0" role="link" aria-label="Open Narender Dammalapati's full portfolio in a new tab">
-          <div class="card-glass">
-            <div class="portrait-wrap">
-              <div class="portrait-glow"></div>
-              <div class="portrait-halo"></div>
-              <img src="images/narender.jpg" alt="Portrait of Narender Dammalapati" class="portrait-img" loading="lazy" />
-              <span class="portrait-watermark">EC</span>
-            </div>
+<li><a href="#contact">Contact</a></li>
 
-            <h3 class="coordinator-name">Narender Dammalapati</h3>
-            <p class="coordinator-role">Overall Coordinator</p>
-            <p class="coordinator-dept">CSE &bull; III B.Tech</p>
-            <p class="coordinator-org">Entrepreneurship Cell &mdash; Siddhartha University</p>
+</ul>
 
-            <span class="divider" aria-hidden="true"></span>
+</nav>
 
-            <p class="coordinator-about">
-              I am a passionate Computer Science Engineering student with a strong interest in Artificial Intelligence, Cloud Computing, and emerging technologies. I enjoy learning new skills, contributing to technical communities, and participating in innovative projects that solve real-world problems.
-            </p>
+<!-- ================= HERO ================= -->
 
-            <ul class="skill-chips" aria-label="Skills">
-              <li class="chip">Leadership</li>
-              <li class="chip">Artificial Intelligence</li>
-              <li class="chip">Cloud Computing</li>
-              <li class="chip">Teamwork</li>
-              <li class="chip">Problem Solving</li>
-            </ul>
+<section class="hero">
 
-            <a href="https://narender-e-cell-portfolio.vercel.app/#contact" target="_blank" rel="noopener noreferrer" class="portfolio-btn card-link">
-              <span>View Full Portfolio</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-        </article>
+<h3>E-CELL • SIDDHARTHA UNIVERSITY</h3>
 
-      </div>
-    </section>
+<h1>
 
-    <!-- ============ COORDINATOR DEPARTMENT SECTION ============ -->
-    <section class="dept-section" id="departments">
-      <div class="dept-panel reveal">
-        <h2 class="dept-title">Coordinator Department</h2>
-        <div class="dept-grid">
+Meet Our <span>Overall Coordinators</span>
 
-          <div class="dept-card">
-            <div class="dept-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2L15 8.5L22 9.3L17 14.1L18.2 21L12 17.7L5.8 21L7 14.1L2 9.3L9 8.5L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-            </div>
-            <h3>Leadership</h3>
-            <p>Leading the team with vision and responsibility.</p>
-          </div>
+</h1>
 
-          <div class="dept-card">
-            <div class="dept-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12L9 6M3 12L9 18M3 12H15M21 6V18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3>Strategic Planning</h3>
-            <p>Planning initiatives and ensuring smooth execution.</p>
-          </div>
+<p>
 
-          <div class="dept-card">
-            <div class="dept-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="7" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M2 20C2 16.5 4.5 14 7 14C8.3 14 9.5 14.6 10.3 15.5M22 20C22 16.5 19.5 14 17 14C15.7 14 14.5 14.6 13.7 15.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-            </div>
-            <h3>Team Coordination</h3>
-            <p>Connecting departments and maintaining collaboration.</p>
-          </div>
+Two leaders. One vision.
 
-          <div class="dept-card">
-            <div class="dept-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18H15M10 21H14M12 3C8.5 3 6 5.6 6 9C6 11.2 7.2 12.7 8.2 13.7C8.9 14.4 9.3 15.2 9.4 16H14.6C14.7 15.2 15.1 14.4 15.8 13.7C16.8 12.7 18 11.2 18 9C18 5.6 15.5 3 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3>Innovation</h3>
-            <p>Encouraging creativity and entrepreneurial thinking.</p>
-          </div>
+Driving innovation and entrepreneurship at Siddhartha University.
 
-        </div>
-      </div>
-    </section>
+</p>
 
-    <!-- ============ CONTACT / FOOTER ANCHOR ============ -->
-    <footer class="site-footer" id="contact">
-      <div class="footer-inner reveal">
-        <img src="images/ecell-logo.png" alt="E-Cell Logo" class="footer-logo" />
-        <p class="footer-tagline">Build &middot; Beyond &middot; Boundaries</p>
-        <p class="footer-copy">&copy; <span id="year"></span> Entrepreneurship Cell, Siddhartha University. All rights reserved.</p>
-      </div>
-    </footer>
-  </main>
+</section>
 
-  <script src="script.js"></script>
+<!-- ================= TEAM ================= -->
+
+<section class="team" id="team">
+
+<div class="card">
+
+<div class="image">
+
+<img src="images/syedavali.png">
+
+</div>
+
+<h2>Syedavali Shaik</h2>
+
+<h4>Overall Coordinator</h4>
+
+<p>ECE • III B.Tech</p>
+
+<p>E-Cell Siddhartha University</p>
+
+<div class="divider"></div>
+
+<div class="chips">
+
+<span>Leadership</span>
+
+<span>Communication</span>
+
+<span>Branding</span>
+
+<span>Content</span>
+
+<span>Teamwork</span>
+
+</div>
+
+<a
+
+href="https://syedavali-ecell-potfolio.vercel.app/"
+
+target="_blank"
+
+class="button">
+
+View Full Portfolio
+
+</a>
+
+</div>
+
+<!-- CENTER -->
+
+<div class="middle">
+
+<div class="line"></div>
+
+<h2>Working Together</h2>
+
+<p>
+
+One Vision • One Mission • One Team
+
+</p>
+
+<div class="flow"></div>
+
+</div>
+
+<!-- CARD -->
+
+<div class="card">
+
+<div class="image">
+
+<img src="images/narender.jpg">
+
+</div>
+
+<h2>Narender Dammalapati</h2>
+
+<h4>Overall Coordinator</h4>
+
+<p>CSE • II B.Tech</p>
+
+<p>E-Cell Siddhartha University</p>
+
+<div class="divider"></div>
+
+<div class="chips">
+
+<span>Leadership</span>
+
+<span>AI</span>
+
+<span>Cloud</span>
+
+<span>Teamwork</span>
+
+<span>Problem Solving</span>
+
+</div>
+
+<a
+
+href="https://narender-e-cell-portfolio.vercel.app/#contact"
+
+target="_blank"
+
+class="button">
+
+View Full Portfolio
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= RESPONSIBILITIES ================= -->
+
+<section class="department" id="departments">
+
+<h1>
+
+Coordinator Department
+
+</h1>
+
+<div class="dept-grid">
+
+<div class="glass">
+
+<i class="fa-solid fa-users"></i>
+
+<h3>Leadership</h3>
+
+<p>
+
+Leading the team with vision and responsibility.
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<i class="fa-solid fa-lightbulb"></i>
+
+<h3>Innovation</h3>
+
+<p>
+
+Encouraging creativity and entrepreneurship.
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<i class="fa-solid fa-diagram-project"></i>
+
+<h3>Strategic Planning</h3>
+
+<p>
+
+Planning initiatives and smooth execution.
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<i class="fa-solid fa-handshake"></i>
+
+<h3>Team Coordination</h3>
+
+<p>
+
+Connecting every department together.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+<h2>E-Cell Siddhartha University</h2>
+
+<p>
+
+Empowering Innovation • Inspiring Entrepreneurs
+
+</p>
+
+<div class="social">
+
+<a href="https://syedavali-ecell-potfolio.vercel.app/" target="_blank">
+
+<i class="fa-solid fa-user"></i>
+
+</a>
+
+<a href="https://narender-e-cell-portfolio.vercel.app/#contact" target="_blank">
+
+<i class="fa-solid fa-user-group"></i>
+
+</a>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
